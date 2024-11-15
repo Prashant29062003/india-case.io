@@ -13,6 +13,10 @@ export default Card
 
 // Define CardHeader, CardContent, and CardFooter as separate components for modularity
 
+export const CardTitle = ({ children, className }: HTMLAttributes<HTMLHeadingElement>) => (
+    <h2 className={cn('text-xl font-bold', className)}>{children}</h2>
+);
+
 export const CardHeader = ({ children, className }: HTMLAttributes<HTMLDivElement>) => (
   <div className={cn('p-4 border-b bg-gray-100', className)}>{children}</div>
 )
